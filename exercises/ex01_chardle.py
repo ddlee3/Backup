@@ -2,7 +2,7 @@
 
 __author__ = "730571115"
 
-word = input("Enter a 5-character word:")
+word = input("Enter a 5-character word: ")
 
 instance = 0
 
@@ -11,7 +11,7 @@ if len(word) != 5:
     exit()
 
 else: 
-    letter = input("Enter a single character:")
+    letter = input("Enter a single character: ")
     
     if len(letter) != 1:
         print("Error: Character must be a single character")
@@ -39,6 +39,11 @@ else:
         print(letter + " found at index 4")
         instance = instance + 1 
         
-    print(str(instance) + " instances of " + letter + " found in " + word)
+    if instance == 1:
+        print(str(instance) + " instance of " + letter + " found in " + word)
+    if instance > 1:
+        print(str(instance) + " instances of " + letter + " found in " + word)
+    if instance == 0:
+        print(str(instance) + " No instances of " + letter + " found in " + word)
 
 
