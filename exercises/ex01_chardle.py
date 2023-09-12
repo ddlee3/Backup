@@ -17,7 +17,7 @@ else:
         print("Error: Character must be a single character")
         exit()
     
-    else: print("Searching for " + letter + "in" + word)
+    else: print("Searching for " + letter + " in " + word)
 
     if letter == word[0]:
         print(letter + " found at index 0")
@@ -45,5 +45,3 @@ else:
         print(str(instance) + " instances of " + letter + " found in " + word)
     if instance == 0:
         print(str(instance) + " No instances of " + letter + " found in " + word)
-
-
