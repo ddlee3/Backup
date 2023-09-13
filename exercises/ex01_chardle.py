@@ -16,8 +16,8 @@ else:
     if len(letter) != 1:
         print("Error: Character must be a single character")
         exit()
-    
-    else: print("Searching for " + letter + " in " + word)
+    else:
+        print("Searching for " + letter + " in " + word)
 
     if letter == word[0]:
         print(letter + " found at index 0")
